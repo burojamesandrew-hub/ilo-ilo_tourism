@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/app.css">
+    <title>Food</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container section-container">
+
+            <!-- LOGO -->
+            <img src="./images/IloiloTourismLogo-removebg-preview.png" alt="Iloilo Tourism Logo" width="100px">
+
+            <!-- ☰ HAMBURGER (CSS ONLY) -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">☰</label>
+
+            <!-- NAVIGATION -->
+            <nav class="navbar">
+                <ul class="nav-links-container">
+                    <li><a href="index.html">Home</a></li>
+
+                    <!-- DESTINATIONS DROPDOWN -->
+                    <li class="dropdown">
+                        <a href="">Destinations ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="islas-de-gigantes.html">Islas de Gigantes</a></li>
+                            <li><a href="miagao-church.html">Miagao Church</a></li>
+                            <li><a href="jaro-cathedral.html">Jaro Cathedral</a></li>
+                            <li><a href="molo-church.html">Molo Church</a></li>
+                            <li><a href="bulabog-puti-an-national-park.html">Bulabog Puti-an</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- CATEGORIES -->
+                    <li class="dropdown">
+                        <a href="">Categories ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="islands.html">Islands</a></li>
+                            <li><a href="historical.html">Historical</a></li>
+                            <li><a href="nature.html">Nature</a></li>
+                            <li><a href="food.html">Food</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- CTA -->
+                    <li><a href="#explore">Explore Now</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="content">
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-section-container section-container">
+                <h1>Savor the Flavors of Iloilo</h1>
+                <p class="hero-paragraph">Delight your senses with the rich and unique flavors of Iloilo. From the savory La Paz Batchoy and comforting Pancit Molo, to the smoky goodness of Chicken Inasal and the freshest seafood, explore a culinary heritage that has made Iloilo a true food lover’s paradise.</p>
+                <a href="#explore" class="btn btn-secondary">Start Exploring</a>
+            </div>
+        </section>
+
+        <!-- FEATURED DESTINATION SECTION -->
+        <section id="explore" class="featured-destination">
+            <div class="section-container">
+                <h2 class="section-title">Top Destinations</h2>
+
+                <div class="card-grid">
+
+                    <article class="card">
+                        <div class="image-container">
+                            <img src="images/chickenInasal1.jfif">
+                            <div class="card-details">
+                                <a href="chicken-inasal.html"><h3 class="article-title">Chicken Inasal</h3></a>
+                                <p class="article-paragraph">A famous Iloilo dish of grilled marinated chicken, known for its smoky flavor and rich local taste.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="image-container">
+                            <img src="images/gigantesSeafood1.jfif">
+                            <div class="card-details">
+                                <a href="gigantes-seafood.html"><h3 class="article-title">Gigantes Seafood</h3></a>
+                                <p class="article-paragraph">Fresh and affordable seafood from the Gigantes Islands, famous for its giant scallops and rich coastal flavors.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="image-container">
+                            <img src="images/laPazBatchoy1.jfif">
+                            <div class="card-details">
+                                <a href="la-paz-batchoy.html"><h3 class="article-title">La paz Batchoy</h3></a>
+                                <p class="article-paragraph">A signature Iloilo noodle soup made with rich broth, pork, and toppings, known for its hearty and flavorful taste.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="image-container">
+                            <img src="images/pancitMolo1.jfif">
+                            <div class="card-details">
+                                <a href="pancit-molo.html"><h3 class="article-title">Pancit Molo</h3></a>
+                                <p class="article-paragraph">A savory Iloilo delicacy of pork-filled dumplings in a flavorful chicken broth, served as a comforting noodle soup.</p>
+                            </div>
+                        </div>
+                    </article>        
+
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- CATEGORY SECTION -->
+        <section id="categories" class="categories section-container">
+            <h2 class="section-title">Explore by Category</h2>
+
+            <div class="category-grid">
+
+                <div class="category-details">
+                    <h3>Islands</h3>
+                    <p>Crystal waters, white sands, and island adventures, your perfect tropical escape in Iloilo.</p>
+                    <a class="btn btn-primary-outline" href="islands.html">Learn more</a>
+                </div>
+                    <div class="image-container">
+                        <img src="./images/islaNaburot4.jfif">
+                        <img src="./images/islasDeGigantes3.jpg" alt="">
+                        <img src="./images/sicogonIsland1.jpg" alt="">
+                        <img src="./images/antoniaBeach2.jpg" alt="">
+                    </div>
+
+                <div class="category-details">
+                    <h3>Foods</h3>
+                    <p>Savor Iloilo’s iconic flavors, from hearty soups to grilled favorites and fresh seafood delights.</p>
+                    <a class="btn btn-primary-outline" href="food.html">Learn more</a>
+                </div>
+                    <div class="image-container1-swap image-container">
+                        <img src="./images/chickenInasal5.jfif">
+                        <img src="./images/laPazBatchoy1.jfif" alt="">
+                        <img src="./images/pancitMolo2.jfif" alt="">
+                        <img src="./images/gigantesSeafood4.jfif" alt="">
+                    </div>
+
+                <div class="category-details">
+                    <h3>Nature</h3>
+                    <p>Escape to cool mountains, lush forests, and scenic landscapes across Iloilo.</p>
+                    <a class="btn btn-primary-outline" href="nature.html">Learn more</a>
+                </div>
+                    <div class="image-container">
+                        <img src="images/bucariPineForest3.jfif">
+                        <img src="./images/bulabogPuti-anNationalPark3.jfif" alt="">
+                        <img src="./images/garinfarmPilgrimageResort1.jfif" alt="">
+                        <img src="./images/islaNaburot1.jfif" alt="">
+                    </div>
+
+                <div class="category-details">
+                    <h3>Historical</h3>
+                    <p>Walk through Iloilo’s past with timeless churches, landmarks, and heritage streets.</p>
+                    <a class="btn btn-primary-outline" href="historical.html">Learn more</a>
+                </div>
+                    <div class="image-container2-swap image-container">
+                        <img src="./images/miagaoChurch3.jpg">
+                        <img src="./images/moloChurch1.jpg" alt="">
+                        <img src="./images/jaroCathedral1.jpg" alt="">
+                        <img src="./images/calleReal5.jpg" alt="">
+                    </div>
+
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <section class="section-container">
+            <h4>About Iloilo Tourism</h4>
+            <p>Your guide to the best destinations and experiences in Iloilo.</p>
+        </section>
+
+        <section class="section-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#explore">Destinations</a></li>
+                <li><a href="#categories">Categories</a></li>
+            </ul>
+        </section>
+
+        <section class="section-container">
+            <p class="small-text">Email: info@iloilotourism.com</p>
+            <p class="small-text">Phone: +63 912 345 6789</p>
+        </section>
+
+        <section class="section-container">
+            <p class="small-text">© 2026 Iloilo Tourism</p>
+            <p class="small-text">CREATED BY: JAMES ANDREW SOCOBOS BURO</p>
+        </section>
+    </footer>
+
+</body>
+</html>
