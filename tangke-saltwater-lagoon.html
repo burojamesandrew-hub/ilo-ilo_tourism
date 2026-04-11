@@ -3,281 +3,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/app.css">
     <title>Tangke Saltwater Lagoon</title>
 </head>
 <body>
 
     <!-- HEADER -->
-    <header class="header">
-        <div class="header-container section-container">
-
-            <!-- LOGO -->
-            <img src="./images/IloiloTourismLogo-removebg-preview.png" alt="Iloilo Tourism Logo" width="100px">
-
-            <!-- ☰ HAMBURGER (CSS ONLY) -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-custom fixed-top">
+            <a class="navbar-brand ms-2" href="index.html">
+                <img src="./images/IloiloTourismLogo-removebg-preview.png" alt="Iloilo Tourism Logo" height="42">
+            </a>
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">☰</label>
-
-            <!-- NAVIGATION -->
-            <nav class="navbar">
-                <ul class="nav-links-container">
-                    <li><a href="index.html">Home</a></li>
-
-                    <!-- DESTINATIONS DROPDOWN -->
-                    <li class="dropdown">
-                        <a href="">Destinations ▼</a>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-md-center gap-md-1 py-3 py-md-0 pe-md-2">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-divider d-none d-md-block"></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Destinations</a>
                         <ul class="dropdown-menu">
-                            <li><a href="islas-de-gigantes.html">Islas de Gigantes</a></li>
-                            <li><a href="miagao-church.html">Miagao Church</a></li>
-                            <li><a href="jaro-cathedral.html">Jaro Cathedral</a></li>
-                            <li><a href="molo-church.html">Molo Church</a></li>
-                            <li><a href="bulabog-puti-an-national-park.html">Bulabog Puti-an</a></li>
+                            <li><a class="dropdown-item" href="islas-de-gigantes.html"> 🏝️ &nbsp;Islas de Gigantes</a></li>
+                            <li><a class="dropdown-item" href="miagao-church.html"> ⛪ &nbsp;Miagao Church</a></li>
+                            <li><a class="dropdown-item" href="jaro-cathedral.html"> 🕌 &nbsp;Jaro Cathedral</a></li>
+                            <li><a class="dropdown-item" href="molo-church.html"> 🏛️ &nbsp;Molo Church</a></li>
+                            <li><a class="dropdown-item" href="bulabog-puti-an-national-park.html"> 🌿 &nbsp;Bulabog Puti-an</a></li>
                         </ul>
                     </li>
-
-                    <!-- CATEGORIES -->
-                    <li class="dropdown">
-                        <a href="">Categories ▼</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
                         <ul class="dropdown-menu">
-                            <li><a href="islands.html">Islands</a></li>
-                            <li><a href="historical.html">Historical</a></li>
-                            <li><a href="nature.html">Nature</a></li>
-                            <li><a href="food.html">Food</a></li>
+                            <li><a class="dropdown-item" href="islands.html"> 🌊 &nbsp;Islands</a></li>
+                            <li><a class="dropdown-item" href="historical.html"> 🏺 &nbsp;Historical</a></li>
+                            <li><a class="dropdown-item" href="nature.html"> 🌲 &nbsp;Nature</a></li>
+                            <li><a class="dropdown-item" href="food.html"> 🍜 &nbsp;Food</a></li>
                         </ul>
                     </li>
-
-                    <!-- CTA -->
-                    <li><a href="#explore">Explore Now</a></li>
+                    <li class="nav-divider d-none d-md-block"></li>
+                    <li class="nav-item"><a class="nav-link nav-cta" href="#explore">Explore Now</a></li>
                 </ul>
-            </nav>
-
-        </div>
+            </div>
+        </nav>
     </header>
 
     <main class="destination-main">
 
-        <!-- HERO SECTION -->
-        <section class="hero tanke-lagoon-hero">
-            <div class="hero-section-container section-container">
-                <h1>Tangke Lagoon</h1>
+        <!-- HERO -->
+        <section class="tanke-lagoon-hero hero d-flex align-items-center justify-content-center text-white text-center">
+            <div>
+                <h1 class="fw-bold mb-3">Tangke Lagoon</h1>
+                <p>Experience the rich culture, historic landmarks, beautiful islands, and vibrant lifestyle of Iloilo.</p>
+                <a id="hero-btn" href="#explore" class="btn btn-primary rounded-pill">Start Exploring</a>
             </div>
         </section>
 
         <!-- OVERVIEW -->
-        <section class="section overview">
-            <div class="section-container split">
-                <div class="split-text">
-                    <h2 class="section-title">Overview</h2>
-                    <p class="section-paragraph">
+        <section class="container my-5">
+            <div class="row align-items-center">
+                <div class="fs-1 col-md-9">
+                    <h2 class="fw-bold mb-3 text-primary-emphasis">Overview</h2>
+                    <p class="text-primary">
                         Tangke Lagoon is a hidden natural pool surrounded by towering limestone cliffs.
                         This unique destination offers a peaceful and refreshing swimming experience
                         within a secluded environment.
                     </p>
                 </div>
-                <div class="image">
-                    <img src="./images/tangkeSaltwaterLagoon1.jpg" alt="Tangke Lagoon">
+                <div class="col-md-3">
+                    <img src="./images/tangkeSaltwaterLagoon1.jpg" alt="Tangke Lagoon" class="img-fluid rounded">
                 </div>
             </div>
         </section>
 
         <!-- TOP ATTRACTIONS -->
         <section id="explore" class="featured-destination">
-            <div class="section-container">
-                <h2>Top Attractions</h2>
-                <div class="card-grid">
-
-                    <article class="card">
-                        <div class="image-container">
+            <div class="container-fluid px-md-5">
+                <h2 class="section-title text-primary-emphasis">Top Attractions</h2>
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="dest-card position-relative">
                             <img src="images/tangkeSaltwaterLagoon2.jpg">
-                            <div class="card-details">
-                                <p class="article-paragraph">Enclosed lagoon</p>
-                            </div>
+                            <div class="card-details"><p class="article-paragraph">Enclosed lagoon</p></div>
                         </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="image-container">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="dest-card position-relative">
                             <img src="images/tangkeSaltwaterLagoon3.jpg">
-                            <div class="card-details">
-                                <p class="article-paragraph">Limestone cliffs</p>
-                            </div>
+                            <div class="card-details"><p class="article-paragraph">Limestone cliffs</p></div>
                         </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="image-container">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="dest-card position-relative">
                             <img src="images/tangkeSaltwaterLagoon4.jpg">
-                            <div class="card-details">
-                                <p class="article-paragraph">Clear saltwater pool</p>
-                            </div>
+                            <div class="card-details"><p class="article-paragraph">Clear saltwater pool</p></div>
                         </div>
-                    </article>
-
-                    <article class="card">
-                        <div class="image-container">
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="dest-card position-relative">
                             <img src="images/tangkeSaltwaterLagoon5.jpg">
-                            <div class="card-details">
-                                <p class="article-paragraph">Natural rock formations</p>
-                            </div>
+                            <div class="card-details"><p class="article-paragraph">Natural rock formations</p></div>
                         </div>
-                    </article>        
-
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- THINGS TO DO -->
-        <section class="section">
-            <div class="section-container toDo-container">
-                <h2 class="section-title">Things To Do</h2>
-                <div class="icon-grid">
-                    <div class="icon-card"><h3>Swim in the lagoon</h3></div>
-                    <div class="icon-card"><h3>Explore rock formations</h3></div>
-                    <div class="icon-card"><h3>Take scenic photos</h3></div>
-                    <div class="icon-card"><h3>Relax in nature</h3></div>
+        <section class="container my-5">
+            <h2 class="fw-bold text-center mb-4 display-6 text-primary-emphasis">Things To Do</h2>
+            <div class="row g-4 text-center fs-2">
+                <div class="col-6 col-md-3">
+                    <div class="p-4 border rounded-pill shadow-sm h-100 bg-primary">
+                        <h5 class="text-white fs-1 fw-semibold">Swim in the lagoon</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 border rounded-pill shadow-sm h-100 bg-primary">
+                        <h5 class="text-white fs-1 fw-semibold">Explore rock formations</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 border rounded-pill shadow-sm h-100 bg-primary">
+                        <h5 class="text-white fs-1 fw-semibold">Take scenic photos</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 border rounded-pill shadow-sm h-100 bg-primary">
+                        <h5 class="text-white fs-1 fw-semibold">Relax in nature</h5>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- LOCATION + INFO -->
-        <section class="location-info-container section-container">
-            <div class="container split">
-                <div class="map">
-                    <img src="./images/DetailedMapOfIloiloProvince.png" alt="Map of Iloilo">
+        <section class="container my-5">
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <img src="./images/DetailedMapOfIloiloProvince.png" alt="Map of Iloilo" class="img-fluid rounded shadow-sm">
                 </div>
-                <div class="info-box">
-                    <h2>Travel Information</h2>
-                    <ul>
-                        <li><strong>Best Time:</strong> Low tide</li>
-                        <li><strong>Location:</strong> Carles, Iloilo</li>
-                        <li><strong>Nearest Transport:</strong> Bancal Port</li>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3 text-primary-emphasis fs-1">Travel Information</h2>
+                    <ul class="list-unstyled mb-3">
+                        <li class="mb-2 text-primary fs-2"><strong>Best Time:</strong> Low tide</li>
+                        <li class="mb-2 text-primary fs-2"><strong>Location:</strong> Carles, Iloilo</li>
+                        <li class="mb-2 text-primary fs-2"><strong>Nearest Transport:</strong> Bancal Port</li>
+                        <li class="mb-2 text-primary fs-2">Located in the Gigantes Islands, accessible via boat and a short walk through rocky terrain.</li>
                     </ul>
-                    <p>
-                        Located in the Gigantes Islands, accessible via boat and a short walk
-                        through rocky terrain.
-                    </p>
                 </div>
             </div>
         </section>
 
         <!-- TRAVEL TIPS -->
-        <section class="tips-section alt-bg">
-            <div class="section-container">
-                <h2 class="section-title">Travel Tips</h2>
-                <div class="tips">
-                    <div class="tip"><p>Wear aqua shoes</p></div>
-                    <div class="tip"><p>Be cautious on slippery rocks</p></div>
-                    <div class="tip"><p>Check tide schedules</p></div>
+        <section class="container my-5">
+            <h2 class="fw-bold text-center mb-4 display-6 text-primary-emphasis">Travel Tips</h2>
+            <div class="row g-4 text-center fs-2">
+                <div class="col-12 col-md-4">
+                    <div class="p-4 border rounded shadow-sm h-100">
+                        <p class="text-primary fw-semibold">Wear aqua shoes</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="p-4 border rounded shadow-sm h-100">
+                        <p class="text-primary fw-semibold">Be cautious on slippery rocks</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="p-4 border rounded shadow-sm h-100">
+                        <p class="text-primary fw-semibold">Check tide schedules</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- ITINERARY -->
         <section class="itinerary-section tanke-lagoon-itinerary-section">
-            <div class="section-container">
-                <h2>Suggested Itinerary</h2>
+            <div class="section-container p-5">
+                <h2 class="fw-bold mb-3 text-primary-emphasis fs-1">Suggested Itinerary</h2>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <h4>Morning</h4>
-                        <p>Island hopping departure and arrival</p>
+                        <h4 class="mb-2 text-primary fs-2">Morning</h4>
+                        <p class="fs-2">Island hopping departure and arrival</p>
                     </div>
                     <div class="timeline-item">
-                        <h4>Afternoon</h4>
-                        <p>Swim and explore Tangke Lagoon</p>
+                        <h4 class="mb-2 text-primary fs-2">Afternoon</h4>
+                        <p class="fs-2">Swim and explore Tangke Lagoon</p>
                     </div>
                     <div class="timeline-item">
-                        <h4>Evening</h4>
-                        <p>Continue to nearby island destinations</p>
+                        <h4 class="mb-2 text-primary fs-2">Evening</h4>
+                        <p class="fs-2">Continue to nearby island destinations</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CATEGORY SECTION -->
-        <section id="categories" class="categories section-container">
-            <h2 class="section-title">Explore by Category</h2>
-
-            <div class="category-grid">
-
-                <div class="category-details">
-                    <h3>Islands</h3>
-                    <p>Crystal waters, white sands, and island adventures, your perfect tropical escape in Iloilo.</p>
-                    <a class="btn btn-primary-outline" href="islands.html">Learn more</a>
-                </div>
-                    <div class="image-container">
-                        <img src="./images/islaNaburot4.jfif">
-                        <img src="./images/islasDeGigantes3.jpg" alt="">
-                        <img src="./images/sicogonIsland1.jpg" alt="">
-                        <img src="./images/antoniaBeach2.jpg" alt="">
+        <!-- CATEGORIES -->
+        <section id="categories" class="categories-section">
+            <div class="container-fluid px-md-5">
+                <h2 class="section-title">Explore by Category</h2>
+                <div class="row g-5 align-items-center mb-5">
+                    <div class="col-12 col-md-6">
+                        <div class="category-details">
+                            <h3>Islands</h3>
+                            <p>Crystal waters, white sands, and island adventures, your perfect tropical escape in Iloilo.</p>
+                            <a class="btn-outline-custom" href="islands.html">Learn more</a>
+                        </div>
                     </div>
-
-                <div class="category-details">
-                    <h3>Foods</h3>
-                    <p>Savor Iloilo’s iconic flavors, from hearty soups to grilled favorites and fresh seafood delights.</p>
-                    <a class="btn btn-primary-outline" href="food.html">Learn more</a>
-                </div>
-                    <div class="image-container1-swap image-container">
-                        <img src="./images/chickenInasal5.jfif">
-                        <img src="./images/laPazBatchoy1.jfif" alt="">
-                        <img src="./images/pancitMolo2.jfif" alt="">
-                        <img src="./images/gigantesSeafood4.jfif" alt="">
+                    <div class="col-12 col-md-6">
+                        <div class="cat-img-grid">
+                            <img src="./images/islaNaburot4.jfif" alt="Isla Naburot">
+                            <img src="./images/islasDeGigantes3.jpg" alt="Islas de Gigantes">
+                            <img src="./images/sicogonIsland1.jpg" alt="Sicogon Island">
+                            <img src="./images/antoniaBeach2.jpg" alt="Antonia Beach">
+                        </div>
                     </div>
-
-                <div class="category-details">
-                    <h3>Nature</h3>
-                    <p>Escape to cool mountains, lush forests, and scenic landscapes across Iloilo.</p>
-                    <a class="btn btn-primary-outline" href="nature.html">Learn more</a>
                 </div>
-                    <div class="image-container">
-                        <img src="images/bucariPineForest3.jfif">
-                        <img src="./images/bulabogPuti-anNationalPark3.jfif" alt="">
-                        <img src="./images/garinfarmPilgrimageResort1.jfif" alt="">
-                        <img src="./images/islaNaburot1.jfif" alt="">
+                <div class="row g-5 align-items-center mb-5">
+                    <div class="col-12 col-md-6 order-md-1 order-2">
+                        <div class="cat-img-grid">
+                            <img src="./images/chickenInasal5.jfif" alt="Chicken Inasal">
+                            <img src="./images/laPazBatchoy1.jfif" alt="La Paz Batchoy">
+                            <img src="./images/pancitMolo2.jfif" alt="Pancit Molo">
+                            <img src="./images/gigantesSeafood4.jfif" alt="Gigantes Seafood">
+                        </div>
                     </div>
-
-                <div class="category-details">
-                    <h3>Historical</h3>
-                    <p>Walk through Iloilo’s past with timeless churches, landmarks, and heritage streets.</p>
-                    <a class="btn btn-primary-outline" href="historical.html">Learn more</a>
+                    <div class="col-12 col-md-6 order-md-2 order-1">
+                        <div class="category-details">
+                            <h3>Foods</h3>
+                            <p>Savor Iloilo's iconic flavors, from hearty soups to grilled favorites and fresh seafood delights.</p>
+                            <a class="btn-outline-custom" href="food.html">Learn more</a>
+                        </div>
+                    </div>
                 </div>
-                    <div class="image-container2-swap image-container">
-                        <img src="./images/miagaoChurch3.jpg">
-                        <img src="./images/moloChurch1.jpg" alt="">
-                        <img src="./images/jaroCathedral1.jpg" alt="">
-                        <img src="./images/calleReal5.jpg" alt="">
+                <div class="row g-5 align-items-center mb-5">
+                    <div class="col-12 col-md-6">
+                        <div class="category-details">
+                            <h3>Nature</h3>
+                            <p>Escape to cool mountains, lush forests, and scenic landscapes across Iloilo.</p>
+                            <a class="btn-outline-custom" href="nature.html">Learn more</a>
+                        </div>
                     </div>
-
+                    <div class="col-12 col-md-6">
+                        <div class="cat-img-grid">
+                            <img src="images/bucariPineForest3.jfif" alt="Bucari Pine Forest">
+                            <img src="./images/bulabogPuti-anNationalPark3.jfif" alt="Bulabog Puti-an">
+                            <img src="./images/garinfarmPilgrimageResort1.jfif" alt="Garin Farm">
+                            <img src="./images/islaNaburot1.jfif" alt="Isla Naburot">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5 align-items-center">
+                    <div class="col-12 col-md-6 order-md-1 order-2">
+                        <div class="cat-img-grid">
+                            <img src="./images/miagaoChurch3.jpg" alt="Miagao Church">
+                            <img src="./images/moloChurch1.jpg" alt="Molo Church">
+                            <img src="./images/jaroCathedral1.jpg" alt="Jaro Cathedral">
+                            <img src="./images/calleReal5.jpg" alt="Calle Real">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 order-md-2 order-1">
+                        <div class="category-details">
+                            <h3>Historical</h3>
+                            <p>Walk through Iloilo's past with timeless churches, landmarks, and heritage streets.</p>
+                            <a class="btn-outline-custom" href="historical.html">Learn more</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <section class="section-container">
-            <h4>About Iloilo Tourism</h4>
-            <p>Your guide to the best destinations and experiences in Iloilo.</p>
-        </section>
-
-        <section class="section-container">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#explore">Destinations</a></li>
-                <li><a href="#categories">Categories</a></li>
-            </ul>
-        </section>
-
-        <section class="section-container">
-            <p class="small-text">Email: info@iloilotourism.com</p>
-            <p class="small-text">Phone: +63 912 345 6789</p>
-        </section>
-
-        <section class="section-container">
-            <p class="small-text">© 2026 Iloilo Tourism</p>
-            <p class="small-text">CREATED BY: JAMES ANDREW SOCOBOS BURO</p>
-        </section>
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row gy-4 justify-content-center">
+                <div class="col-12 col-md-3">
+                    <h4>About Iloilo Tourism</h4>
+                    <p>Your guide to the best destinations and experiences in Iloilo.</p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#explore">Destinations</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <p>Email: info@iloilotourism.com</p>
+                    <p>Phone: +63 912 345 6789</p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <p>© 2026 Iloilo Tourism</p>
+                    <p>CREATED BY: JAMES ANDREW SOCOBOS BURO</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmW7q+fWRtt1+LKm9HXsDGl+jAt" crossorigin="anonymous"></script>
 </body>
 </html>
