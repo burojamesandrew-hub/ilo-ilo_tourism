@@ -3,45 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Islas de Gigantes - crystal-clear turquoise waters, white sand beaches, dramatic limestone cliffs, and world-class island hopping in Iloilo Province.">
+    <meta name="keywords" content="Islas de Gigantes, island hopping, Iloilo beaches, Philippines islands, Carles Iloilo">
+    <meta name="author" content="James Andrew Socobos Buro">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Islas de Gigantes - Crystal Island Paradise in Iloilo">
+    <meta property="og:description" content="Discover the stunning Islas de Gigantes with turquoise waters, white sand beaches, and incredible island hopping adventures.">
+    <meta property="og:image" content="./images/islasDeGigantes3.jpg">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/app.css">
-    <title>Islas de Gigantes</title>
+    <title>Islas de Gigantes - Island Hopping in Iloilo | Tourism Guide</title>
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <nav class="navbar navbar-expand-md navbar-custom fixed-top">
-            <a class="navbar-brand ms-2" href="index.html">
-                <img src="./images/IloiloTourismLogo-removebg-preview.png" alt="Iloilo Tourism Logo" height="42">
+    <!-- NAVIGATION HEADER -->
+    <header role="banner">
+        <nav class="navbar navbar-expand-md navbar-custom fixed-top" aria-label="Main navigation">
+            <a class="navbar-brand ms-2" href="index.html" aria-label="Iloilo Tourism Home">
+                <img src="./images/IloiloTourismLogo-removebg-preview.png" alt="Iloilo Tourism Logo" height="42" loading="lazy">
             </a>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">☰</label>
+            <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu">
+            <label for="menu-toggle" class="menu-icon" aria-hidden="true">☰</label>
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ms-auto align-items-md-center gap-md-1 py-3 py-md-0 pe-md-2">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-divider d-none d-md-block"></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-divider d-none d-md-block" role="separator" aria-hidden="true"></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Destinations</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="islas-de-gigantes.html"> 🏝️ &nbsp;Islas de Gigantes</a></li>
-                            <li><a class="dropdown-item" href="miagao-church.html"> ⛪ &nbsp;Miagao Church</a></li>
-                            <li><a class="dropdown-item" href="jaro-cathedral.html"> 🕌 &nbsp;Jaro Cathedral</a></li>
-                            <li><a class="dropdown-item" href="molo-church.html"> 🏛️ &nbsp;Molo Church</a></li>
-                            <li><a class="dropdown-item" href="bulabog-puti-an-national-park.html"> 🌿 &nbsp;Bulabog Puti-an</a></li>
+                        <a class="nav-link dropdown-toggle" href="#destinations" id="destinationsDropdown" data-bs-toggle="dropdown" aria-expanded="false">Destinations</a>
+                        <ul class="dropdown-menu" aria-labelledby="destinationsDropdown">
+                            <li><a class="dropdown-item" href="islas-de-gigantes.html" aria-current="page">🏝️ &nbsp;Islas de Gigantes</a></li>
+                            <li><a class="dropdown-item" href="miagao-church.html">⛪ &nbsp;Miagao Church</a></li>
+                            <li><a class="dropdown-item" href="jaro-cathedral.html">🕌 &nbsp;Jaro Cathedral</a></li>
+                            <li><a class="dropdown-item" href="molo-church.html">🏛️ &nbsp;Molo Church</a></li>
+                            <li><a class="dropdown-item" href="bulabog-puti-an-national-park.html">🌿 &nbsp;Bulabog Puti-an</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="islands.html"> 🌊 &nbsp;Islands</a></li>
-                            <li><a class="dropdown-item" href="historical.html"> 🏺 &nbsp;Historical</a></li>
-                            <li><a class="dropdown-item" href="nature.html"> 🌲 &nbsp;Nature</a></li>
-                            <li><a class="dropdown-item" href="food.html"> 🍜 &nbsp;Food</a></li>
+                        <a class="nav-link dropdown-toggle" href="#categories" id="categoriesDropdown" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                        <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                            <li><a class="dropdown-item" href="islands.html">🌊 &nbsp;Islands</a></li>
+                            <li><a class="dropdown-item" href="historical.html">🏺 &nbsp;Historical</a></li>
+                            <li><a class="dropdown-item" href="nature.html">🌲 &nbsp;Nature</a></li>
+                            <li><a class="dropdown-item" href="food.html">🍜 &nbsp;Food</a></li>
                         </ul>
                     </li>
-                    <li class="nav-divider d-none d-md-block"></li>
+                    <li class="nav-divider d-none d-md-block" role="separator" aria-hidden="true"></li>
                     <li class="nav-item"><a class="nav-link nav-cta" href="#explore">Explore Now</a></li>
                 </ul>
             </div>

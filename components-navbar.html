@@ -1,0 +1,36 @@
+<!-- ============================================================
+     components/navbar.html
+     Professional navigation bar for Iloilo Tourism
+     Loaded dynamically by nav.js with __ROOT__/ path handling
+     ============================================================ -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+  <div class="container">
+
+    <a class="navbar-brand" href="__ROOT__/index.html">
+      🌺 Iloilo <span>Province</span>
+    </a>
+
+    <button class="navbar-toggler border-0" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navMenu"
+      aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list text-white fs-2"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="__ROOT__/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="__ROOT__/pages/about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="__ROOT__/pages/destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="__ROOT__/pages/festivals.html">Festivals</a></li>
+        <li class="nav-item"><a class="nav-link" href="__ROOT__/pages/food.html">Food</a></li>
+        <li class="nav-item"><a class="nav-link" href="__ROOT__/pages/gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="__ROOT__/pages/tips.html">Travel Tips</a></li>
+        <li class="nav-item"><a class="nav-link" href="__ROOT__/pages/inquiry.html">Inquiry</a></li>
+      </ul>
+      <a href="__ROOT__/pages/inquiry.html" class="btn btn-outline-custom ms-lg-3 mt-2 mt-lg-0">
+        <i class="bi bi-send me-1"></i>Plan Your Trip
+      </a>
+    </div>
+
+  </div>
+</nav>

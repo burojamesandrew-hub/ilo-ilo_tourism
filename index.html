@@ -3,270 +3,568 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Iloilo Province - Explore beautiful islands, historic landmarks, vibrant cuisine, and natural wonders. Your ultimate guide to tourism in Iloilo, Philippines.">
+    <meta name="keywords" content="Iloilo tourism, Iloilo Province, Islas de Gigantes, Iloilo destinations, Philippines travel">
+    <meta name="author" content="James Andrew Socobos Buro">
+    <meta name="theme-color" content="#0D5EAF">
+    <meta property="og:title" content="Iloilo Province Tourism - Discover Paradise">
+    <meta property="og:description" content="Explore the best destinations, cuisine, and culture in Iloilo Province.">
+    <meta property="og:image" content="./images/IloiloTourismLogo-removebg-preview.png">
+    <meta property="og:type" content="website">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/app.css">
-    <title>Ilo-ilo Tourism</title>
+    <link rel="stylesheet" href="styles/main-new.css">
+    <title>Iloilo Province Tourism - Discover Islands, Culture &amp; Adventure</title>
 </head>
 <body>
- 
-    <!-- NAVBAR -->
-     <header>
-        <nav class="navbar navbar-expand-md navbar-custom fixed-top">
- 
-        <!-- LOGO / BRAND -->
-        <a class="navbar-brand ms-2" href="index.html">
-            <img src="./images/IloiloTourismLogo-removebg-preview.png" alt="Iloilo Tourism Logo" height="42">
+
+<!-- ============================== NAVBAR ============================== -->
+<header role="banner">
+    <nav class="navbar navbar-expand-md navbar-custom fixed-top" aria-label="Main navigation">
+        <a class="navbar-brand ms-2" href="#home" aria-label="Iloilo Tourism Home">
+            <img src="./images/IloiloTourismLogo-removebg-preview.png" alt="Iloilo Tourism Logo" height="42" loading="lazy">
         </a>
- 
-        <!-- ☰ HAMBURGER (CSS ONLY) -->
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">☰</label>
- 
-        <!-- NAV LINKS -->
-        <div class="navbar collapse navbar-collapse" id="mainNav">
-            <ul class="nav-links-container navbar-nav ms-auto align-items-md-center gap-md-1 py-3 py-md-0 pe-md-2">
- 
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
- 
-                <!-- DIVIDER (desktop only) -->
-                <li class="nav-divider d-none d-md-block"></li>
- 
-                <!-- DESTINATIONS DROPDOWN -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        Destinations
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="islas-de-gigantes.html">
-                            🏝️ &nbsp;Islas de Gigantes</a></li>
-                        <li><a class="dropdown-item" href="miagao-church.html">
-                            ⛪ &nbsp;Miagao Church</a></li>
-                        <li><a class="dropdown-item" href="jaro-cathedral.html">
-                            🕌 &nbsp;Jaro Cathedral</a></li>
-                        <li><a class="dropdown-item" href="molo-church.html">
-                            🏛️ &nbsp;Molo Church</a></li>
-                        <li><a class="dropdown-item" href="bulabog-puti-an-national-park.html">
-                            🌿 &nbsp;Bulabog Puti-an</a></li>
-                    </ul>
-                </li>
- 
-                <!-- CATEGORIES DROPDOWN -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        Categories
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="islands.html">
-                            🌊 &nbsp;Islands</a></li>
-                        <li><a class="dropdown-item" href="historical.html">
-                            🏺 &nbsp;Historical</a></li>
-                        <li><a class="dropdown-item" href="nature.html">
-                            🌲 &nbsp;Nature</a></li>
-                        <li><a class="dropdown-item" href="food.html">
-                            🍜 &nbsp;Food</a></li>
-                    </ul>
-                </li>
- 
-                <!-- DIVIDER (desktop only) -->
-                <li class="nav-divider d-none d-md-block"></li>
- 
-                <!-- CTA BUTTON -->
-                <li class="nav-item">
-                    <a class="nav-link nav-cta" href="#explore">Explore Now</a>
-                </li>
- 
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list text-white fs-3"></i>
+        </button>
+        <div class="collapse navbar-collapse nav-collapse-fixed" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-md-center gap-md-1 py-2 py-md-0 pe-md-2">
+                <li class="nav-item"><a class="nav-link nav-link-close" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-close" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-close" href="#destinations">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-close" href="#festivals">Festivals</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-close" href="#food">Food</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-close" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-close" href="#travel-tips">Travel Tips</a></li>
+                <li class="nav-divider d-none d-md-block" role="separator" aria-hidden="true"></li>
+                <li class="nav-item"><a class="nav-link nav-cta nav-link-close" href="#inquiry">Inquire Now</a></li>
             </ul>
         </div>
     </nav>
-     </header>
- 
-     <main>
-        <!-- HERO -->
-    <section class="hero d-flex align-items-center justify-content-center text-white text-center">
-        <div>
-            <h1 class="fw-bold mb-3">Discover Iloilo Province</h1>
-            <p>Experience the rich culture, historic landmarks, beautiful islands, and vibrant lifestyle of Iloilo.</p>
-            <a id="hero-btn" href="#explore" class="btn btn-primary rounded-pill">Start Exploring</a>
+</header>
+
+<main role="main">
+
+<!-- ============================== HERO ============================== -->
+<section id="home" class="hero d-flex align-items-center justify-content-center text-white text-center" aria-labelledby="hero-title">
+    <div class="hero-overlay"></div>
+    <div class="hero-content position-relative">
+        <span class="hero-badge">Welcome to Iloilo Province</span>
+        <h1 id="hero-title" class="hero-title fw-bold mb-3">Discover Iloilo Province</h1>
+        <p class="hero-slogan lead mb-4">Explore Iloilo: Discover islands, heritage, food, festivals, and adventure.</p>
+        <p class="hero-welcome mb-4">A province of timeless beauty in Western Visayas — where turquoise waters meet centuries of history, and every corner holds a story worth exploring.</p>
+        <a href="#destinations" class="btn btn-hero-primary me-2">Explore Destinations</a>
+        <a href="#inquiry" class="btn btn-hero-outline">Plan Your Trip</a>
+    </div>
+</section>
+
+<!-- ============================== ABOUT ============================== -->
+<section id="about" class="about-section section-pad" aria-labelledby="about-title">
+    <div class="container-fluid px-md-5">
+        <div class="section-header text-center mb-5">
+            <span class="section-tag">About the Province</span>
+            <h2 id="about-title" class="section-title">Heart of Western Visayas</h2>
+            <p class="section-subtitle">A province rich in culture, history, and natural wonders</p>
         </div>
-    </section>
- 
- 
-    <!-- FEATURED DESTINATIONS -->
-    <section id="explore" class="featured-destination">
-        <div class="container-fluid px-md-5">
-            <h2 class="section-title">Top Destinations</h2>
- 
-            <div class="row g-4">
- 
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="dest-card position-relative">
-                        <img src="images/islasDeGigantes3.jpg" alt="Islas de Gigantes">
-                        <div class="card-details">
-                            <a href="islas-de-gigantes.html"><h3>Islas de Gigantes</h3></a>
-                            <p>Famous for crystal-clear waters and island hopping adventures.</p>
+
+        <div class="row g-4 mb-5 align-items-center">
+            <div class="col-12 col-lg-6">
+                <div class="about-img-stack">
+                    <img src="images/islasDeGigantes3.jpg" alt="Iloilo Province scenic view" class="about-img-main" loading="lazy">
+                    <img src="images/miagaoChurch2.jpg" alt="Miagao Church UNESCO Heritage" class="about-img-accent" loading="lazy">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="about-info">
+                    <div class="about-info-item">
+                        <i class="bi bi-geo-alt-fill about-icon"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Iloilo Province is located in Western Visayas (Region VI), Philippines. It occupies the southeastern portion of Panay Island and is bordered by Antique to the west, Capiz to the north, and Aklan to the northwest. The Iloilo Strait separates it from Guimaras to the south.</p>
+                        </div>
+                    </div>
+                    <div class="about-info-item">
+                        <i class="bi bi-book-half about-icon"></i>
+                        <div>
+                            <h4>History &amp; Background</h4>
+                            <p>One of the oldest cities in the Philippines, Iloilo served as a key colonial center during the Spanish era. Its rich heritage is visible in stunning Baroque churches, ancestral houses, and heritage streets like Calle Real. The province was a thriving center of commerce, textile weaving, and governance for centuries.</p>
+                        </div>
+                    </div>
+                    <div class="about-info-item">
+                        <i class="bi bi-stars about-icon"></i>
+                        <div>
+                            <h4>Known Attractions</h4>
+                            <p>From the pristine shores of Islas de Gigantes and Sicogon Island to the UNESCO-listed Miagao Church, the pine forests of Bucari, the saltwater lagoon of Isla Naburot, and the cultural heritage trail of Calle Real — Iloilo offers experiences for every traveler.</p>
                         </div>
                     </div>
                 </div>
- 
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="dest-card position-relative">
-                        <img src="images/miagaoChurch2.jpg" alt="Miagao Church">
-                        <div class="card-details">
-                            <a href="miagao-church.html"><h3>Miagao Church</h3></a>
-                            <p>A UNESCO heritage church with stunning architecture.</p>
-                        </div>
-                    </div>
-                </div>
- 
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="dest-card position-relative">
-                        <img src="images/sicogonIsland3.jpg" alt="Sicogon Island">
-                        <div class="card-details">
-                            <a href="sicogon-island.html"><h3>Sicogon Island</h3></a>
-                            <p>A tropical paradise known for its white sandy beaches, clear blue waters, and laid-back island vibe.</p>
-                        </div>
-                    </div>
-                </div>
- 
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="dest-card position-relative">
-                        <img src="images/bucariPineForest1.jfif" alt="Bucari Pine Forest">
-                        <div class="card-details">
-                            <a href="#"><h3>Bucari Pine Forest</h3></a>
-                            <p>A serene mountain retreat with lush pine trees, cool climate, and scenic viewpoints.</p>
-                        </div>
-                    </div>
-                </div>
- 
             </div>
         </div>
-    </section>
- 
-    <!-- CATEGORIES -->
-    <section id="categories" class="categories-section">
-        <div class="container-fluid px-md-5">
-            <h2 class="section-title">Explore by Category</h2>
- 
-            <!-- Islands -->
-            <div class="row g-5 align-items-center mb-5">
-                <div class="col-12 col-md-6">
-                    <div class="category-details">
-                        <h3>Islands</h3>
-                        <p>Crystal waters, white sands, and island adventures, your perfect tropical escape in Iloilo.</p>
-                        <a class="btn-outline-custom" href="islands.html">Learn more</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="cat-img-grid">
-                        <img src="./images/islaNaburot4.jfif" alt="Isla Naburot">
-                        <img src="./images/islasDeGigantes3.jpg" alt="Islas de Gigantes">
-                        <img src="./images/sicogonIsland1.jpg" alt="Sicogon Island">
-                        <img src="./images/antoniaBeach2.jpg" alt="Antonia Beach">
-                    </div>
+
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="about-card-highlight">
+                    <i class="bi bi-people-fill"></i>
+                    <h4>Culture &amp; Traditions</h4>
+                    <p>Ilonggos are known for their warm hospitality, rich weaving traditions (hablon), and vibrant street festivals. The province celebrates the Dinagyang Festival, a world-famous cultural and religious event honoring the Santo Niño, drawing thousands of visitors every January.</p>
                 </div>
             </div>
- 
-            <!-- Foods (image left / text right on desktop) -->
-            <div class="row g-5 align-items-center mb-5">
-                <div class="col-12 col-md-6 order-md-1 order-2">
-                    <div class="cat-img-grid">
-                        <img src="./images/chickenInasal5.jfif" alt="Chicken Inasal">
-                        <img src="./images/laPazBatchoy1.jfif" alt="La Paz Batchoy">
-                        <img src="./images/pancitMolo2.jfif" alt="Pancit Molo">
-                        <img src="./images/gigantesSeafood4.jfif" alt="Gigantes Seafood">
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 order-md-2 order-1">
-                    <div class="category-details">
-                        <h3>Foods</h3>
-                        <p>Savor Iloilo's iconic flavors, from hearty soups to grilled favorites and fresh seafood delights.</p>
-                        <a class="btn-outline-custom" href="food.html">Learn more</a>
-                    </div>
+            <div class="col-12 col-md-4">
+                <div class="about-card-highlight">
+                    <i class="bi bi-camera2"></i>
+                    <h4>Why Visit Iloilo</h4>
+                    <p>Iloilo offers an unmatched blend of sun-soaked beaches, mountain escapes, 400-year-old churches, and a food scene unlike anywhere else in the country. It's a destination that rewards slow travel — where every meal, street, and sunset tells a story.</p>
                 </div>
             </div>
- 
-            <!-- Nature -->
-            <div class="row g-5 align-items-center mb-5">
-                <div class="col-12 col-md-6">
-                    <div class="category-details">
-                        <h3>Nature</h3>
-                        <p>Escape to cool mountains, lush forests, and scenic landscapes across Iloilo.</p>
-                        <a class="btn-outline-custom" href="nature.html">Learn more</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="cat-img-grid">
-                        <img src="images/bucariPineForest3.jfif" alt="Bucari Pine Forest">
-                        <img src="./images/bulabogPuti-anNationalPark3.jfif" alt="Bulabog Puti-an">
-                        <img src="./images/garinfarmPilgrimageResort1.jfif" alt="Garin Farm">
-                        <img src="./images/islaNaburot1.jfif" alt="Isla Naburot">
-                    </div>
-                </div>
-            </div>
- 
-            <!-- Historical (image left / text right on desktop) -->
-            <div class="row g-5 align-items-center">
-                <div class="col-12 col-md-6 order-md-1 order-2">
-                    <div class="cat-img-grid">
-                        <img src="./images/miagaoChurch3.jpg" alt="Miagao Church">
-                        <img src="./images/moloChurch1.jpg" alt="Molo Church">
-                        <img src="./images/jaroCathedral1.jpg" alt="Jaro Cathedral">
-                        <img src="./images/calleReal5.jpg" alt="Calle Real">
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 order-md-2 order-1">
-                    <div class="category-details">
-                        <h3>Historical</h3>
-                        <p>Walk through Iloilo's past with timeless churches, landmarks, and heritage streets.</p>
-                        <a class="btn-outline-custom" href="historical.html">Learn more</a>
-                    </div>
-                </div>
-            </div>
- 
-        </div>
-    </section>
-     </main>
-    
- 
- 
-    <!-- FOOTER -->
-    <footer class="footer-custom">
-        <div class="container">
-            <div class="row gy-4 justify-content-center">
- 
-                <div class="col-12 col-md-3">
-                    <h4>About Iloilo Tourism</h4>
-                    <p>Your guide to the best destinations and experiences in Iloilo.</p>
-                </div>
- 
-                <div class="col-12 col-md-3">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#explore">Destinations</a></li>
-                        <li><a href="#categories">Categories</a></li>
+            <div class="col-12 col-md-4">
+                <div class="about-card-highlight">
+                    <i class="bi bi-map-fill"></i>
+                    <h4>Quick Facts</h4>
+                    <ul class="about-facts-list">
+                        <li><strong>Capital:</strong> Iloilo City</li>
+                        <li><strong>Region:</strong> Western Visayas (VI)</li>
+                        <li><strong>Municipalities:</strong> 42</li>
+                        <li><strong>Language:</strong> Hiligaynon (Ilonggo)</li>
+                        <li><strong>Climate:</strong> Tropical, wet &amp; dry seasons</li>
+                        <li><strong>Airport:</strong> Iloilo International Airport</li>
                     </ul>
                 </div>
- 
-                <div class="col-12 col-md-3">
-                    <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="93fafdf5fcd3fafffcfafffce7fce6e1fae0febdf0fcfe">[email&#160;protected]</a></p>
-                    <p>Phone: +63 912 345 6789</p>
-                </div>
- 
-                <div class="col-12 col-md-3">
-                    <p>© 2026 Iloilo Tourism</p>
-                    <p>CREATED BY: JAMES ANDREW SOCOBOS BURO</p>
-                </div>
- 
             </div>
         </div>
-    </footer>
- 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    </div>
+</section>
 
+<!-- ============================== DESTINATIONS ============================== -->
+<section id="destinations" class="destinations-section section-pad" aria-labelledby="destinations-title">
+    <div class="container-fluid px-md-5">
+        <div class="section-header text-center mb-5">
+            <span class="section-tag">Explore Iloilo</span>
+            <h2 id="destinations-title" class="section-title">Tourist Destinations</h2>
+            <p class="section-subtitle">Discover breathtaking spots across the province</p>
+        </div>
+
+        <!-- Search & Filter Bar -->
+        <div class="destinations-toolbar mb-4">
+            <div class="row g-3 align-items-center">
+                <div class="col-12 col-md-5">
+                    <div class="search-wrapper">
+                        <i class="bi bi-search search-icon"></i>
+                        <input type="text" id="destSearch" class="form-control search-input" placeholder="Search by name, municipality, or category...">
+                    </div>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="filter-tabs" id="filterTabs">
+                        <button class="filter-btn active" data-cat="All">All</button>
+                        <button class="filter-btn" data-cat="Island">Island</button>
+                        <button class="filter-btn" data-cat="Beach">Beach</button>
+                        <button class="filter-btn" data-cat="Mountain">Mountain</button>
+                        <button class="filter-btn" data-cat="Historical Site">Historical</button>
+                        <button class="filter-btn" data-cat="Nature">Nature</button>
+                        <button class="filter-btn" data-cat="Adventure">Adventure</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Destination Cards Grid -->
+        <div class="row g-4" id="destinationCards"></div>
+        <p class="no-results text-center py-4 d-none" id="noResults">No destinations found. Try a different search or filter.</p>
+    </div>
+</section>
+
+<!-- ============================== DESTINATION DETAIL MODAL ============================== -->
+<div class="modal fade" id="destModal" tabindex="-1" aria-labelledby="destModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header dest-modal-header">
+                <div>
+                    <span class="modal-category-badge" id="modalCategory"></span>
+                    <h5 class="modal-title" id="destModalLabel"></h5>
+                    <p class="modal-location mb-0"><i class="bi bi-geo-alt"></i> <span id="modalLocation"></span></p>
+                </div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-4">
+                    <div class="col-12 col-md-5">
+                        <img id="modalImage" src="" alt="" class="modal-dest-img w-100" loading="lazy">
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <p id="modalFullDesc" class="modal-full-desc"></p>
+                        <div class="modal-meta-grid">
+                            <div class="modal-meta-item">
+                                <i class="bi bi-activity"></i>
+                                <div><strong>Activities</strong><p id="modalActivities"></p></div>
+                            </div>
+                            <div class="modal-meta-item">
+                                <i class="bi bi-calendar3"></i>
+                                <div><strong>Best Time to Visit</strong><p id="modalBestTime"></p></div>
+                            </div>
+                            <div class="modal-meta-item">
+                                <i class="bi bi-ticket-perforated"></i>
+                                <div><strong>Entrance Fee</strong><p id="modalFee"></p></div>
+                            </div>
+                            <div class="modal-meta-item">
+                                <i class="bi bi-clock"></i>
+                                <div><strong>Opening Hours</strong><p id="modalHours"></p></div>
+                            </div>
+                        </div>
+                        <div class="modal-tips mt-3">
+                            <i class="bi bi-lightbulb-fill"></i>
+                            <strong>Travel Tip:</strong> <span id="modalTip"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="#inquiry" class="btn btn-primary" data-bs-dismiss="modal">Inquire About This Destination</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================== FESTIVALS ============================== -->
+<section id="festivals" class="festivals-section section-pad" aria-labelledby="festivals-title">
+    <div class="container-fluid px-md-5">
+        <div class="section-header text-center mb-5">
+            <span class="section-tag">Celebrations</span>
+            <h2 id="festivals-title" class="section-title">Festivals &amp; Culture</h2>
+            <p class="section-subtitle">Experience Iloilo's vibrant cultural spirit</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-12 col-md-6">
+                <article class="festival-card">
+                    <div class="festival-img-wrap">
+                        <img src="images/pexels-thejuanmarco-6054428.jpg" alt="Dinagyang Festival dancers" loading="lazy">
+                        <span class="festival-month-badge">January</span>
+                    </div>
+                    <div class="festival-body">
+                        <h3 class="festival-name">Dinagyang Festival</h3>
+                        <p class="festival-location"><i class="bi bi-geo-alt-fill"></i> Iloilo City</p>
+                        <p class="festival-desc">One of the most spectacular festivals in the Philippines, Dinagyang is a religious and cultural event celebrated every fourth Sunday of January. Tribes dressed in elaborate painted costumes and headdresses perform choreographed dances through the city streets in honor of the Santo Niño. It draws hundreds of thousands of visitors annually and is a multi-awarded tourism event recognized both locally and internationally.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-md-6">
+                <article class="festival-card">
+                    <div class="festival-img-wrap">
+                        <img src="images/pexels-apollo-toza-3539083-5299835.jpg" alt="Paraw Regatta Festival sailboats" loading="lazy">
+                        <span class="festival-month-badge">February</span>
+                    </div>
+                    <div class="festival-body">
+                        <h3 class="festival-name">Paraw Regatta Festival</h3>
+                        <p class="festival-location"><i class="bi bi-geo-alt-fill"></i> Iloilo Strait</p>
+                        <p class="festival-desc">Asia's oldest traditional sailboat race, the Paraw Regatta celebrates Iloilo's rich maritime heritage every February. "Paraw" are traditional double-outrigger sailboats indigenous to Panay Island. Crews navigate the Iloilo Strait in a colorful and competitive race. The festival also features cultural performances, food fairs, and heritage events that showcase the province's deep connection to the sea.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-md-6">
+                <article class="festival-card">
+                    <div class="festival-img-wrap">
+                        <img src="images/garinfarmPilgrimageResort1.jfif" alt="Garin Farm pilgrimage" loading="lazy">
+                        <span class="festival-month-badge">April</span>
+                    </div>
+                    <div class="festival-body">
+                        <h3 class="festival-name">Semana Santa (Holy Week)</h3>
+                        <p class="festival-location"><i class="bi bi-geo-alt-fill"></i> Province-wide</p>
+                        <p class="festival-desc">Holy Week in Iloilo is observed with deep religious devotion. Thousands of pilgrims visit the Garin Farm Pilgrimage Resort and historic churches like Miagao, Jaro Cathedral, and Molo Church. Senakulo (Passion Plays), processions, and the Bisita Iglesia (church-hopping) are central traditions reflecting the province's strong Catholic faith and centuries of religious heritage.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-md-6">
+                <article class="festival-card">
+                    <div class="festival-img-wrap">
+                        <img src="images/miagaoChurch1.jpg" alt="Miagao Church" loading="lazy">
+                        <span class="festival-month-badge">May</span>
+                    </div>
+                    <div class="festival-body">
+                        <h3 class="festival-name">Flores de Mayo &amp; Santacruzan</h3>
+                        <p class="festival-location"><i class="bi bi-geo-alt-fill"></i> Province-wide</p>
+                        <p class="festival-desc">Every May, towns across Iloilo celebrate Flores de Mayo — a month-long offering of flowers to the Virgin Mary — culminating in the Santacruzan, an elegant religious-historical pageant. Young women dressed as biblical and historical figures parade through the streets in beautiful gowns, accompanied by their escorts. A uniquely Filipino tradition blending faith, beauty, and community pride.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================== FOOD ============================== -->
+<section id="food" class="food-section section-pad" aria-labelledby="food-title">
+    <div class="container-fluid px-md-5">
+        <div class="section-header text-center mb-5">
+            <span class="section-tag">Taste of Iloilo</span>
+            <h2 id="food-title" class="section-title">Food &amp; Delicacies</h2>
+            <p class="section-subtitle">Savor the iconic flavors that define Iloilo's culinary identity</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="food-card">
+                    <div class="food-img-wrap">
+                        <img src="images/chickenInasal2.jfif" alt="Chicken Inasal" loading="lazy">
+                    </div>
+                    <div class="food-body">
+                        <h4 class="food-name">Chicken Inasal</h4>
+                        <p class="food-desc">The undisputed signature dish of Iloilo. Marinated in calamansi, vinegar, annatto, and native herbs, then char-grilled to smoky perfection. Served with sinamak (spiced vinegar), garlic rice, and chicken oil — a meal that defines Ilonggo cooking.</p>
+                        <div class="food-where"><i class="bi bi-shop"></i><span>Tatoy's Manokan, Mang Inasal (original), Molo District restaurants</span></div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="food-card">
+                    <div class="food-img-wrap">
+                        <img src="images/laPazBatchoy3.jfif" alt="La Paz Batchoy" loading="lazy">
+                    </div>
+                    <div class="food-body">
+                        <h4 class="food-name">La Paz Batchoy</h4>
+                        <p class="food-desc">Born in the La Paz public market, this hearty noodle soup features pork organs, crushed chicharon, egg noodles, and a rich, deep broth. A bowl of batchoy is more than a meal — it's a cultural institution and a must-try on every visit to Iloilo.</p>
+                        <div class="food-where"><i class="bi bi-shop"></i><span>Ted's Oldtimer, Deco's Restaurant, La Paz Market stalls</span></div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="food-card">
+                    <div class="food-img-wrap">
+                        <img src="images/pancitMolo2.jfif" alt="Pancit Molo" loading="lazy">
+                    </div>
+                    <div class="food-body">
+                        <h4 class="food-name">Pancit Molo</h4>
+                        <p class="food-desc">Named after the Molo district, this Filipino wonton soup features pork-and-shrimp filled dumplings in a rich chicken and pork broth, garnished with chicharon and green onions. Its Chinese-inspired origins reflect Iloilo's history as a thriving trading port.</p>
+                        <div class="food-where"><i class="bi bi-shop"></i><span>Breakthrough Restaurant, Netong's, Casa Margarita, Molo district</span></div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="food-card">
+                    <div class="food-img-wrap">
+                        <img src="images/gigantesSeafood1.jfif" alt="Gigantes Seafood" loading="lazy">
+                    </div>
+                    <div class="food-body">
+                        <h4 class="food-name">Gigantes Seafood</h4>
+                        <p class="food-desc">Islas de Gigantes is famed for its plump, fresh scallops harvested straight from the sea and grilled on the shell with butter and cheese. Alongside scallops, fresh squid, shrimp, and fish caught by local fishermen make this a seafood lover's paradise.</p>
+                        <div class="food-where"><i class="bi bi-shop"></i><span>Beachfront eateries in Gigantes Norte &amp; Sur, floating restaurants near the dock</span></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================== GALLERY ============================== -->
+<section id="gallery" class="gallery-section section-pad" aria-labelledby="gallery-title">
+    <div class="container-fluid px-md-5">
+        <div class="section-header text-center mb-5">
+            <span class="section-tag">Visual Journey</span>
+            <h2 id="gallery-title" class="section-title">Photo Gallery</h2>
+            <p class="section-subtitle">Click any photo to view it in full screen</p>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+</section>
+
+<!-- Gallery Lightbox -->
+<div id="lightbox" class="lightbox" role="dialog" aria-label="Image lightbox" aria-modal="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image"><i class="bi bi-chevron-left"></i></button>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next image"><i class="bi bi-chevron-right"></i></button>
+    <div class="lightbox-img-wrap">
+        <img id="lightboxImg" src="" alt="" loading="lazy">
+    </div>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+    <div class="lightbox-footer">
+        <p class="lightbox-counter" id="lightboxCounter"></p>
+        <a id="lightboxVisit" href="#" class="btn lightbox-visit-btn">
+            <i class="bi bi-arrow-right-circle-fill me-1"></i> Visit Destination
+        </a>
+    </div>
+</div>
+
+<!-- ============================== TRAVEL TIPS ============================== -->
+<section id="travel-tips" class="tips-section section-pad" aria-labelledby="tips-title">
+    <div class="container-fluid px-md-5">
+        <div class="section-header text-center mb-5">
+            <span class="section-tag">Before You Go</span>
+            <h2 id="tips-title" class="section-title">Travel Tips</h2>
+            <p class="section-subtitle">Everything you need to know for a smooth Iloilo adventure</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="tip-card">
+                    <div class="tip-icon-wrap"><i class="bi bi-calendar-check-fill"></i></div>
+                    <h4>Best Time to Visit</h4>
+                    <p>The best time to visit Iloilo is <strong>November to May</strong> during the dry season — ideal for island hopping, beach visits, and outdoor activities. January is especially festive with Dinagyang. Avoid June–October due to typhoon season, though cultural sites remain open year-round.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="tip-card">
+                    <div class="tip-icon-wrap"><i class="bi bi-airplane-fill"></i></div>
+                    <h4>Getting to Iloilo</h4>
+                    <p>Iloilo is accessible via <strong>Iloilo International Airport (ILO)</strong> with direct flights from Manila (1 hour), Cebu, and other major cities. By sea, regular fast ferries and RORO vessels connect Iloilo to Bacolod, Cebu, and Manila. The airport is about 20–30 minutes from Iloilo City.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="tip-card">
+                    <div class="tip-icon-wrap"><i class="bi bi-bus-front-fill"></i></div>
+                    <h4>Getting Around</h4>
+                    <p>Within Iloilo City, <strong>jeepneys, tricycles, taxis, and Grab</strong> are the main transport options. For island destinations like Islas de Gigantes, rent a pump boat or join group tours from Estancia Port. Renting a car or hiring a private van is ideal for day trips across municipalities.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="tip-card">
+                    <div class="tip-icon-wrap"><i class="bi bi-shield-check-fill"></i></div>
+                    <h4>Safety Reminders</h4>
+                    <p>Iloilo is generally <strong>safe for tourists</strong> — keep valuables secure, avoid isolated areas at night, and be mindful of belongings in crowded markets. When island hopping, always check weather forecasts and travel with licensed guides or reputable tour operators. Register with local tourism offices when heading to remote islands.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="tip-card">
+                    <div class="tip-icon-wrap"><i class="bi bi-wallet2"></i></div>
+                    <h4>Budget &amp; Currency</h4>
+                    <p>Iloilo is a <strong>budget-friendly destination</strong>. ATMs are widely available in the city but bring cash when heading to remote islands. Most establishments accept cash; cards are accepted in hotels, malls, and larger restaurants. A daily budget of ₱800–₱2,000 covers accommodations, meals, and transport for budget travelers.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="tip-card">
+                    <div class="tip-icon-wrap"><i class="bi bi-heart-pulse-fill"></i></div>
+                    <h4>Health &amp; Essentials</h4>
+                    <p>Pack <strong>sunscreen, insect repellent, and a reusable water bottle</strong> — especially for island and nature destinations. Bring motion sickness medication for boat rides. Hospitals are available in Iloilo City; medical facilities in remote areas are limited. Travel insurance and basic medications are highly recommended.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================== INQUIRY FORM ============================== -->
+<section id="inquiry" class="inquiry-section section-pad" aria-labelledby="inquiry-title">
+    <div class="container-fluid px-md-5">
+        <div class="row g-0 inquiry-wrapper">
+            <div class="col-12 col-lg-5 inquiry-side">
+                <div class="inquiry-side-content">
+                    <span class="section-tag light">Get in Touch</span>
+                    <h2 id="inquiry-title" class="section-title light">Plan Your Iloilo Adventure</h2>
+                    <p>Ready to explore the Pearl of the South? Fill out the form and our team will get back to you with personalized recommendations and travel information.</p>
+                    <ul class="inquiry-contact-list">
+                        <li><i class="bi bi-envelope-fill"></i> info@iloilotourism.com</li>
+                        <li><i class="bi bi-telephone-fill"></i> +63 912 345 6789</li>
+                        <li><i class="bi bi-geo-alt-fill"></i> Iloilo Province, Philippines</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-lg-7 inquiry-form-side">
+                <form id="inquiryForm" class="inquiry-form" novalidate>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Juan dela Cruz" required>
+                            <div class="invalid-feedback" id="nameError"></div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="emailAddress" class="form-label">Email Address <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="emailAddress" placeholder="juan@email.com" required>
+                            <div class="invalid-feedback" id="emailError"></div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="contactNumber" class="form-label">Contact Number <span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control" id="contactNumber" placeholder="09XX XXX XXXX" required>
+                            <div class="invalid-feedback" id="contactError"></div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="selectedDestination" class="form-label">Selected Destination <span class="text-danger">*</span></label>
+                            <select class="form-select" id="selectedDestination" required>
+                                <option value="">-- Choose a destination --</option>
+                                <option>Islas de Gigantes</option>
+                                <option>Miagao Church</option>
+                                <option>Jaro Cathedral</option>
+                                <option>Molo Church</option>
+                                <option>Sicogon Island</option>
+                                <option>Bucari Pine Forest</option>
+                                <option>Bulabog Puti-an National Park</option>
+                                <option>Antonia Beach</option>
+                                <option>Isla Naburot</option>
+                                <option>Tangke Saltwater Lagoon</option>
+                                <option>Garin Farm Pilgrimage Resort</option>
+                                <option>Calle Real</option>
+                            </select>
+                            <div class="invalid-feedback" id="destError"></div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="travelDate" class="form-label">Travel Date <span class="text-danger">*</span></label>
+                            <input type="date" class="form-control" id="travelDate" required>
+                            <div class="invalid-feedback" id="dateError"></div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="numVisitors" class="form-label">Number of Visitors <span class="text-danger">*</span></label>
+                            <input type="number" class="form-control" id="numVisitors" placeholder="1" min="1" required>
+                            <div class="invalid-feedback" id="visitorsError"></div>
+                        </div>
+                        <div class="col-12">
+                            <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your travel plans, special requirements, or any questions you have..." required></textarea>
+                            <div class="invalid-feedback" id="messageError"></div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-inquiry-submit w-100">
+                                <i class="bi bi-send-fill me-2"></i>Send Inquiry
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div id="formSuccess" class="form-success-msg d-none">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <h4>Inquiry Sent Successfully!</h4>
+                    <p>Thank you for reaching out. Our tourism team will contact you within 24–48 hours to help plan your perfect Iloilo adventure.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="footer-custom" role="contentinfo">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-12 col-md-3">
+                <img src="./images/IloiloTourismLogo-removebg-preview.png" alt="Iloilo Tourism Logo" height="50" class="mb-3">
+                <p>Your trusted guide to the best destinations, food, and experiences in Iloilo Province, Philippines.</p>
+            </div>
+            <div class="col-12 col-md-3">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Iloilo</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#festivals">Festivals</a></li>
+                    <li><a href="#food">Food &amp; Delicacies</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#travel-tips">Travel Tips</a></li>
+                    <li><a href="#inquiry">Inquire Now</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <h4>Contact</h4>
+                <p><i class="bi bi-envelope-fill me-2"></i><a href="mailto:info@iloilotourism.com">info@iloilotourism.com</a></p>
+                <p><i class="bi bi-telephone-fill me-2"></i><a href="tel:+639123456789">+63 912 345 6789</a></p>
+                <p><i class="bi bi-geo-alt-fill me-2"></i>Iloilo Province, Philippines</p>
+            </div>
+            <div class="col-12 col-md-3">
+                <h4>About</h4>
+                <p>&copy; <span id="year"></span> Iloilo Province Tourism</p>
+                <p>Created by:<br><strong>James Andrew Socobos Buro</strong></p>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <p class="text-center footer-bottom">Proudly showcasing the beauty of Iloilo Province, Philippines 🇵🇭</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmW7q+fWRtt1+LKm9HXsDGl+jAt" crossorigin="anonymous"></script>
+<script src="scripts/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
-</html>       
+</html>

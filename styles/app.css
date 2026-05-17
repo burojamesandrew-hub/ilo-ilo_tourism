@@ -207,12 +207,71 @@
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.9%29' stroke-width='2.2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
  
-        /* Mobile collapse */
-        @media (max-width: 767px) {
-            .navbar-custom .dropdown-menu { background-color: rgba(255,255,255,.06); box-shadow: none; border: none; }
-            .navbar-custom .nav-divider { display: none; }
-            .navbar-custom .nav-cta { margin: .6rem auto 0; display: inline-block; }
+        /* MOBILE-FIRST RESPONSIVE DESIGN */
+        @media (max-width: 576px) {
+            html { font-size: 50%; }
+            
+            .hero { height: 70vh; }
+            .hero h1 { font-size: 3.2rem; }
+            .hero p { font-size: 1.4rem; margin-bottom: 2rem; }
+            
+            .section-title { font-size: 2.8rem; margin-bottom: 4rem; }
+            .featured-destination { padding: 5rem 3%; }
+            .categories-section { padding: 5rem 3%; }
+            
+            .category-details h3 { font-size: 2rem; }
+            .category-details p { font-size: 1.4rem; }
+            
+            .cat-img-grid { grid-template-columns: 1fr; gap: 0.8rem; }
+            
+            .navbar-custom { padding: 0 1.5rem; }
+            .navbar-custom .nav-link { font-size: 1.2rem; padding: 0.4rem 0.8rem !important; }
         }
+
+        @media (max-width: 768px) {
+            .navbar-custom .nav-link { font-size: 1.3rem; }
+            .navbar-custom .nav-cta { margin-left: 0; }
+        }
+
+        @media (min-width: 1200px) {
+            .container-fluid { max-width: 1400px; margin: 0 auto; }
+        }
+
+        /* ACCESSIBILITY */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* SMOOTH SCROLL BEHAVIOR */
+        html { scroll-behavior: smooth; }
+
+        /* FOCUS STYLES FOR ACCESSIBILITY */
+        a:focus, button:focus, input:focus {
+            outline: 2px solid var(--secondary-base);
+            outline-offset: 2px;
+        }
+
+        /* SKIP TO MAIN LINK (for keyboard navigation) */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--secondary-base);
+            color: var(--primary-shade);
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+            font-weight: bold;
+        }
+        .skip-link:focus { top: 0; }
  
         /* ---- CUSTOM BUTTONS ---- */
 
@@ -692,5 +751,79 @@
 
             .section-title{
                 font-size: 2rem;
+            }
+        }
+
+        /* ---- ENHANCED ANIMATIONS ---- */
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        /* Apply animations to cards on load */
+        .dest-card { animation: scaleIn 0.6s ease-out; }
+        .category-details { animation: slideInLeft 0.7s ease-out; }
+        .cat-img-grid { animation: slideInRight 0.7s ease-out; }
+
+        /* ---- ENHANCED FOCUS & ACCESSIBILITY ---- */
+        *:focus-visible {
+            outline: 2px solid var(--secondary-base);
+            outline-offset: 4px;
+        }
+
+        button:focus-visible, a:focus-visible {
+            border-radius: 4px;
+        }
+
+        /* ---- LINK STYLING IMPROVEMENTS ---- */
+        a {
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        .footer-custom a:hover {
+            text-decoration: underline;
+            opacity: 0.9;
+        }
+
+        /* ---- BUTTON IMPROVEMENTS ---- */
+        .btn {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        /* ---- IMAGE OPTIMIZATION ---- */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Lazy-loaded image fade-in */
+        img[loading="lazy"] {
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        /* ---- PRINT STYLES ---- */
+        @media print {
+            .navbar-custom, .footer-custom {
+                display: none;
+            }
+            body {
+                color: #000;
+                background: #fff;
             }
         }
