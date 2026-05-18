@@ -497,9 +497,23 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", () => {
       const collapse = document.getElementById("mainNav");
       if (collapse && collapse.classList.contains("show")) {
-        const bsCollapse = bootstrap.Collapse.getInstance(collapse);
-        if (bsCollapse) bsCollapse.hide();
+        const bsCollapse = window.bootstrap ? bootstrap.Collapse.getInstance(collapse) : null;
+        if (bsCollapse) {
+          bsCollapse.hide();
+        } else {
+          collapse.classList.remove("show");
+        }
       }
     });
   });
+
+  const navToggler = document.querySelector(".navbar-toggler");
+  const mainNav = document.getElementById("mainNav");
+  if (navToggler && mainNav && typeof window.bootstrap === "undefined") {
+    navToggler.addEventListener("click", () => {
+      const isOpen = mainNav.classList.contains("show");
+      mainNav.classList.toggle("show", !isOpen);
+      navToggler.setAttribute("aria-expanded", String(!isOpen));
+    });
+  }
 });
