@@ -295,6 +295,19 @@
 
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmW7q+fWRtt1+LKm9HXsDGl+jAt" crossorigin="anonymous"></script>
-<script>document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());</script>
+<script>
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+    document.addEventListener('DOMContentLoaded', function () {
+        const mainNav = document.getElementById('mainNav');
+        if (!mainNav || typeof bootstrap === 'undefined') return;
+        const bsNav = bootstrap.Collapse.getOrCreateInstance(mainNav, { toggle: false });
+        document.querySelectorAll('.close-nav, .nav-link-close').forEach(el => {
+            el.addEventListener('click', () => {
+                bsNav.hide();
+            });
+        });
+    });
+</script>
 </body>
 </html>
+

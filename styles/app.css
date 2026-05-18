@@ -976,6 +976,12 @@ section { scroll-margin-top: 7rem; }
     .dest-card img { height: 18rem; }
 }
 
+/* @media (max-width: 950px) {
+    .navbar{
+        font-size: ;
+    }
+} */
+
 @media (max-width: 576px) {
     html { font-size: 50%; }
     .inquiry-side, .inquiry-form-side { padding: 3rem 2rem; }
@@ -985,6 +991,10 @@ section { scroll-margin-top: 7rem; }
     .lightbox-footer { flex-direction: column; gap: 1rem; }
     .cat-img-grid { grid-template-columns: 1fr; }
     .cat-img-grid img { height: 18rem; }
+}
+
+@media (max-width: 60px) {
+    html{ font-size: 5%; }
 }
 
 @media (min-width: 1200px) {
