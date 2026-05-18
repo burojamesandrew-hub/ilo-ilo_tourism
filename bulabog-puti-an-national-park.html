@@ -3,71 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
-    <!-- CUSTOM CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/app.css">
-
-    <title>Bulabog Puti-an National Park</title>
+    <title>Bulabog Puti-an National Park — Iloilo Province Tourism</title>
 </head>
 <body>
 
 <!-- HEADER -->
-<header>
-    <nav class="navbar navbar-expand-md navbar-custom fixed-top">
-
-        <a class="navbar-brand ms-2" href="index.html">
-            <img src="./images/IloiloTourismLogo-removebg-preview.png" height="42">
+<header role="banner">
+    <nav class="navbar navbar-expand-md navbar-custom fixed-top" aria-label="Main navigation">
+        <a class="navbar-brand ms-2" href="index.html" aria-label="Iloilo Tourism Home">
+            <img src="./images/IloiloTourismLogo-removebg-preview.png" alt="Iloilo Tourism Logo" height="42" loading="lazy">
         </a>
-
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">☰</label>
-
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-auto align-items-md-center gap-md-1 py-3 py-md-0 pe-md-2">
-
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-
-                <li class="nav-divider d-none d-md-block"></li>
-
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list text-white fs-3"></i>
+        </button>
+        <div class="collapse navbar-collapse nav-collapse-fixed" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-md-center gap-md-1 py-2 py-md-0 pe-md-2">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-divider d-none d-md-block" role="separator" aria-hidden="true"></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                        Destinations
-                    </a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Destinations</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="islas-de-gigantes.html">Islas de Gigantes</a></li>
-                        <li><a class="dropdown-item" href="miagao-church.html">Miagao Church</a></li>
-                        <li><a class="dropdown-item" href="jaro-cathedral.html">Jaro Cathedral</a></li>
-                        <li><a class="dropdown-item" href="molo-church.html">Molo Church</a></li>
-                        <li><a class="dropdown-item" href="bulabog-puti-an-national-park.html">Bulabog Puti-an</a></li>
+                        <li><a class="dropdown-item" href="islas-de-gigantes.html">🏝️ &nbsp;Islas de Gigantes</a></li>
+                        <li><a class="dropdown-item" href="miagao-church.html">⛪ &nbsp;Miagao Church</a></li>
+                        <li><a class="dropdown-item" href="jaro-cathedral.html">🕌 &nbsp;Jaro Cathedral</a></li>
+                        <li><a class="dropdown-item" href="molo-church.html">🏛️ &nbsp;Molo Church</a></li>
+                        <li><a class="dropdown-item" href="bulabog-puti-an-national-park.html">🌿 &nbsp;Bulabog Puti-an</a></li>
+                        <li><a class="dropdown-item" href="sicogon-island.html">🌴 &nbsp;Sicogon Island</a></li>
+                        <li><a class="dropdown-item" href="antonia-beach.html">🏖️ &nbsp;Antonia Beach</a></li>
+                        <li><a class="dropdown-item" href="isla-naburot.html">🌊 &nbsp;Isla Naburot</a></li>
+                        <li><a class="dropdown-item" href="garinfarm-pilgrimage-resort.html">⛩️ &nbsp;Garin Farm</a></li>
+                        <li><a class="dropdown-item" href="calle-real.html">🏘️ &nbsp;Calle Real</a></li>
                     </ul>
                 </li>
-
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                        Categories
-                    </a>
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="islands.html">Islands</a></li>
-                        <li><a class="dropdown-item" href="historical.html">Historical</a></li>
-                        <li><a class="dropdown-item" href="nature.html">Nature</a></li>
-                        <li><a class="dropdown-item" href="food.html">Food</a></li>
+                        <li><a class="dropdown-item" href="islands.html">🌊 &nbsp;Islands</a></li>
+                        <li><a class="dropdown-item" href="historical.html">🏺 &nbsp;Historical</a></li>
+                        <li><a class="dropdown-item" href="nature.html">🌲 &nbsp;Nature</a></li>
+                        <li><a class="dropdown-item" href="food.html">🍜 &nbsp;Food</a></li>
                     </ul>
                 </li>
-
-                <li class="nav-divider d-none d-md-block"></li>
-
-                <li class="nav-item">
-                    <a class="nav-link nav-cta" href="#explore">Explore Now</a>
-                </li>
-
+                <li class="nav-divider d-none d-md-block" role="separator" aria-hidden="true"></li>
+                <li class="nav-item"><a class="nav-link nav-cta" href="index.html#inquiry">Inquire Now</a></li>
             </ul>
         </div>
     </nav>
@@ -76,11 +58,12 @@
 <main class="destination-main">
 
 <!-- HERO -->
-<section class="bulabog-puti-an-hero hero d-flex align-items-center justify-content-center text-white text-center">
-    <div>
-        <h1 class="fw-bold mb-3">Bulabog Puti-an National Park</h1>
-        <p>Explore caves, forests, and rich biodiversity in this eco-tourism destination.</p>
-        <a id="hero-btn" href="#explore" class="btn btn-primary rounded-pill">Start Exploring</a>
+<section class="sub-hero bulabog-puti-an-hero" aria-label="Page hero">
+    <div class="sub-hero-overlay"></div>
+    <div class="sub-hero-content">
+        <h1>Bulabog Puti-an National Park</h1>
+        <p>A protected natural forest reserve in Miagao with diverse flora, waterfalls, and scenic hiking trails.</p>
+        <a href="#explore" class="sub-hero-btn">Start Exploring</a>
     </div>
 </section>
 
@@ -89,8 +72,8 @@
     <div class="row align-items-center">
 
         <div class="col-md-9 fs-1">
-            <h2 class="fw-bold mb-3 text-primary-emphasis">Overview</h2>
-            <p class="text-primary">
+            <h2 class="section-title mb-3">Overview</h2>
+            <p style="font-size:1.6rem;font-family:'Nunito',sans-serif;line-height:1.7;color:var(--grey-shade)">
                 This national park is known for its caves, forests, and rich biodiversity. 
                 It is a perfect destination for eco-tourism and adventure seekers.
             </p>
@@ -104,7 +87,7 @@
 </section>
 
 <!-- TOP ATTRACTIONS -->
-<section id="explore" class="featured-destination">
+<section id="explore" class="featured-destination section-pad">
     <div class="container-fluid px-md-5">
         <h2 class="section-title text-primary-emphasis">Top Attractions</h2>
 
@@ -112,28 +95,28 @@
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="dest-card position-relative">
-                    <img src="images/bulabogPuti-anNationalPark2.jfif">
+                    <a href="bulabog-puti-an-national-park.html" class="dest-card-link"><img src="images/bulabogPuti-anNationalPark2.jfif"></a>
                     <div class="card-details"><p>Limestone caves</p></div>
                 </div>
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="dest-card position-relative">
-                    <img src="images/bulabogPuti-anNationalPark3.jfif">
+                    <a href="bulabog-puti-an-national-park.html" class="dest-card-link"><img src="images/bulabogPuti-anNationalPark3.jfif"></a>
                     <div class="card-details"><p>Forest trails</p></div>
                 </div>
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="dest-card position-relative">
-                    <img src="images/bulabogPuti-anNationalPark4.jfif">
+                    <a href="bulabog-puti-an-national-park.html" class="dest-card-link"><img src="images/bulabogPuti-anNationalPark4.jfif"></a>
                     <div class="card-details"><p>Wildlife</p></div>
                 </div>
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="dest-card position-relative">
-                    <img src="images/bulabogPuti-anNationalPark5.jfif">
+                    <a href="bulabog-puti-an-national-park.html" class="dest-card-link"><img src="images/bulabogPuti-anNationalPark5.jfif"></a>
                     <div class="card-details"><p>Rock formations</p></div>
                 </div>
             </div>
@@ -144,33 +127,17 @@
 
 <!-- THINGS TO DO -->
 <section class="container my-5">
-    <h2 class="fw-bold text-center mb-4 display-6 text-primary-emphasis">Things To Do</h2>
+    <h2 class="section-title text-center mb-4">Things To Do</h2>
 
-    <div class="row g-4 text-center fs-2">
+    <div class="info-pill-grid">
 
-        <div class="col-6 col-md-3">
-            <div class="p-4 border rounded-pill shadow-sm bg-primary">
-                <h5 class="text-white fs-1">Cave Exploration</h5>
-            </div>
-        </div>
+        <div class="info-pill">Cave Exploration</div>
 
-        <div class="col-6 col-md-3">
-            <div class="p-4 border rounded-pill shadow-sm bg-primary">
-                <h5 class="text-white fs-1">Hiking</h5>
-            </div>
-        </div>
+        <div class="info-pill">Hiking</div>
 
-        <div class="col-6 col-md-3">
-            <div class="p-4 border rounded-pill shadow-sm bg-primary">
-                <h5 class="text-white fs-1">Wildlife Observation</h5>
-            </div>
-        </div>
+        <div class="info-pill">Wildlife Observation</div>
 
-        <div class="col-6 col-md-3">
-            <div class="p-4 border rounded-pill shadow-sm bg-primary">
-                <h5 class="text-white fs-1">Photography</h5>
-            </div>
-        </div>
+        <div class="info-pill">Photography</div>
 
     </div>
 </section>
@@ -184,8 +151,8 @@
         </div>
 
         <div class="col-md-6">
-            <h2 class="fw-bold mb-3 text-primary-emphasis fs-1">Travel Information</h2>
-            <ul class="list-unstyled text-primary fs-2">
+            <h2 class="section-title mb-3">Travel Information</h2>
+            <ul class="list-unstyled">
                 <li><strong>Best Time:</strong> Dry season</li>
                 <li><strong>Location:</strong> Dingle, Iloilo</li>
                 <li><strong>Nearest Transport:</strong> Local transport</li>
@@ -198,21 +165,15 @@
 
 <!-- TRAVEL TIPS -->
 <section class="container my-5">
-    <h2 class="fw-bold text-center mb-4 display-6 text-primary-emphasis">Travel Tips</h2>
+    <h2 class="section-title text-center mb-4">Travel Tips</h2>
 
-    <div class="row g-4 text-center fs-2">
+    <div class="info-pill-grid">
 
-        <div class="col-md-4">
-            <div class="p-4 border rounded-pill shadow-sm bg-primary text-white">Hire a guide</div>
-        </div>
+        <div class="info-pill">Hire a guide</div>
 
-        <div class="col-md-4">
-            <div class="p-4 border rounded-pill shadow-sm bg-primary text-white">Bring gear</div>
-        </div>
+        <div class="info-pill">Bring gear</div>
 
-        <div class="col-md-4">
-            <div class="p-4 border rounded-pill shadow-sm bg-primary text-white">Wear proper shoes</div>
-        </div>
+        <div class="info-pill">Wear proper shoes</div>
 
     </div>
 </section>
@@ -224,15 +185,15 @@
 
         <div class="timeline">
             <div class="timeline-item">
-                <h4 class="text-primary fs-2">Morning</h4>
+                <h4 class="text-primary">Morning</h4>
                 <p class="fs-2">Guided cave tour</p>
             </div>
             <div class="timeline-item">
-                <h4 class="text-primary fs-2">Afternoon</h4>
+                <h4 class="text-primary">Afternoon</h4>
                 <p class="fs-2">Hike forest trails</p>
             </div>
             <div class="timeline-item">
-                <h4 class="text-primary fs-2">Evening</h4>
+                <h4 class="text-primary">Evening</h4>
                 <p class="fs-2">Relax and enjoy nature</p>
             </div>
         </div>
@@ -240,7 +201,7 @@
 </section>
 
 <!-- CATEGORIES -->
-    <section id="categories" class="categories-section">
+    <section id="categories" class="categories-section section-pad">
         <div class="container-fluid px-md-5">
             <h2 class="section-title">Explore by Category</h2>
  
@@ -255,10 +216,10 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="cat-img-grid">
-                        <img src="./images/islaNaburot4.jfif" alt="Isla Naburot">
-                        <img src="./images/islasDeGigantes3.jpg" alt="Islas de Gigantes">
-                        <img src="./images/sicogonIsland1.jpg" alt="Sicogon Island">
-                        <img src="./images/antoniaBeach2.jpg" alt="Antonia Beach">
+                        <a href="isla-naburot.html"><img src="./images/islaNaburot4.jfif" alt="Isla Naburot"></a>
+                        <a href="islas-de-gigantes.html"><img src="./images/islasDeGigantes3.jpg" alt="Islas de Gigantes"></a>
+                        <a href="sicogon-island.html"><img src="./images/sicogonIsland1.jpg" alt="Sicogon Island"></a>
+                        <a href="antonia-beach.html"><img src="./images/antoniaBeach2.jpg" alt="Antonia Beach"></a>
                     </div>
                 </div>
             </div>
@@ -267,10 +228,10 @@
             <div class="row g-5 align-items-center mb-5">
                 <div class="col-12 col-md-6 order-md-1 order-2">
                     <div class="cat-img-grid">
-                        <img src="./images/chickenInasal5.jfif" alt="Chicken Inasal">
-                        <img src="./images/laPazBatchoy1.jfif" alt="La Paz Batchoy">
-                        <img src="./images/pancitMolo2.jfif" alt="Pancit Molo">
-                        <img src="./images/gigantesSeafood4.jfif" alt="Gigantes Seafood">
+                        <a href="chicken-inasal.html"><img src="./images/chickenInasal5.jfif" alt="Chicken Inasal"></a>
+                        <a href="la-paz-batchoy.html"><img src="./images/laPazBatchoy1.jfif" alt="La Paz Batchoy"></a>
+                        <a href="pancit-molo.html"><img src="./images/pancitMolo2.jfif" alt="Pancit Molo"></a>
+                        <a href="gigantes-seafood.html"><img src="./images/gigantesSeafood4.jfif" alt="Gigantes Seafood"></a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 order-md-2 order-1">
@@ -293,10 +254,10 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="cat-img-grid">
-                        <img src="images/bucariPineForest3.jfif" alt="Bucari Pine Forest">
-                        <img src="./images/bulabogPuti-anNationalPark3.jfif" alt="Bulabog Puti-an">
-                        <img src="./images/garinfarmPilgrimageResort1.jfif" alt="Garin Farm">
-                        <img src="./images/islaNaburot1.jfif" alt="Isla Naburot">
+                        <a href="bucari-pine-forest.html"><img src="images/bucariPineForest3.jfif" alt="Bucari Pine Forest"></a>
+                        <a href="bulabog-puti-an-national-park.html"><img src="./images/bulabogPuti-anNationalPark3.jfif" alt="Bulabog Puti-an"></a>
+                        <a href="garinfarm-pilgrimage-resort.html"><img src="./images/garinfarmPilgrimageResort1.jfif" alt="Garin Farm"></a>
+                        <a href="isla-naburot.html"><img src="./images/islaNaburot1.jfif" alt="Isla Naburot"></a>
                     </div>
                 </div>
             </div>
@@ -305,10 +266,10 @@
             <div class="row g-5 align-items-center">
                 <div class="col-12 col-md-6 order-md-1 order-2">
                     <div class="cat-img-grid">
-                        <img src="./images/miagaoChurch3.jpg" alt="Miagao Church">
-                        <img src="./images/moloChurch1.jpg" alt="Molo Church">
-                        <img src="./images/jaroCathedral1.jpg" alt="Jaro Cathedral">
-                        <img src="./images/calleReal5.jpg" alt="Calle Real">
+                        <a href="miagao-church.html"><img src="./images/miagaoChurch3.jpg" alt="Miagao Church"></a>
+                        <a href="molo-church.html"><img src="./images/moloChurch1.jpg" alt="Molo Church"></a>
+                        <a href="jaro-cathedral.html"><img src="./images/jaroCathedral1.jpg" alt="Jaro Cathedral"></a>
+                        <a href="calle-real.html"><img src="./images/calleReal5.jpg" alt="Calle Real"></a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 order-md-2 order-1">
@@ -325,38 +286,45 @@
 </main>
 
 <!-- FOOTER -->
-<footer class="footer-custom">
+<footer class="footer-custom" role="contentinfo">
     <div class="container">
-        <div class="row gy-4 text-center">
-
-            <div class="col-md-3">
-                <h4>About Iloilo Tourism</h4>
-                <p>Your guide to the best destinations in Iloilo.</p>
+        <div class="row gy-4">
+            <div class="col-12 col-md-3">
+                <img src="./images/IloiloTourismLogo-removebg-preview.png" alt="Iloilo Tourism Logo" height="50" class="mb-3">
+                <p>Your trusted guide to the best destinations, food, and experiences in Iloilo Province, Philippines.</p>
             </div>
-
-            <div class="col-md-3">
+            <div class="col-12 col-md-3">
+                <h4>Quick Links</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#explore">Destinations</a></li>
+                    <li><a href="islands.html">Islands</a></li>
+                    <li><a href="historical.html">Historical</a></li>
+                    <li><a href="nature.html">Nature</a></li>
+                    <li><a href="food.html">Food &amp; Delicacies</a></li>
+                    <li><a href="index.html#inquiry">Inquire Now</a></li>
                 </ul>
             </div>
-
-            <div class="col-md-3">
-                <p>Email: info@iloilotourism.com</p>
-                <p>Phone: +63 912 345 6789</p>
+            <div class="col-12 col-md-3">
+                <h4>Contact</h4>
+                <p><i class="bi bi-envelope-fill me-2"></i><a href="mailto:info@iloilotourism.com">info@iloilotourism.com</a></p>
+                <p><i class="bi bi-telephone-fill me-2"></i><a href="tel:+639123456789">+63 912 345 6789</a></p>
+                <p><i class="bi bi-geo-alt-fill me-2"></i>Iloilo Province, Philippines</p>
             </div>
-
-            <div class="col-md-3">
-                <p>© 2026 Iloilo Tourism</p>
-                <p>CREATED BY: JAMES ANDREW SOCOBOS BURO</p>
+            <div class="col-12 col-md-3">
+                <h4>About</h4>
+                <p>&copy; <span class="footer-year"></span> Iloilo Province Tourism</p>
+                <p>Created by:<br><strong>James Andrew Socobos Buro</strong></p>
             </div>
-
         </div>
+        <hr class="footer-divider">
+        <p class="text-center footer-bottom">Proudly showcasing the beauty of Iloilo Province, Philippines 🇵🇭</p>
     </div>
 </footer>
 
 <!-- BOOTSTRAP JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmW7q+fWRtt1+LKm9HXsDGl+jAt" crossorigin="anonymous"></script>
+<script>document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());</script>
 </body>
 </html>
