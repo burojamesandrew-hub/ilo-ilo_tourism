@@ -399,9 +399,26 @@ function setupFormValidation() {
   document.getElementById("contactNumber").addEventListener("input", function () {
     /^[\d\s\+\-\(\)]{7,15}$/.test(this.value.trim()) ? showValid("contactNumber") : clearValidation("contactNumber");
   });
+  document.getElementById("numVisitors").addEventListener("input", function () {
+    const num = parseInt(this.value);
+    num && !isNaN(num) && num >= 1 ? showValid("numVisitors") : clearValidation("numVisitors");
+  });
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
+    
+    // Clear all validation classes and error messages first
+    const allInputs = form.querySelectorAll("input, textarea, select");
+    allInputs.forEach(input => {
+      input.classList.remove("is-invalid", "is-valid");
+    });
+    
+    // Clear all error message text
+    const errorElements = form.querySelectorAll(".invalid-feedback");
+    errorElements.forEach(error => {
+      error.textContent = "";
+    });
+    
     let valid = true;
 
     const name = document.getElementById("fullName").value.trim();
@@ -433,7 +450,7 @@ function setupFormValidation() {
     } else { showValid("travelDate"); }
 
     const visitors = parseInt(document.getElementById("numVisitors").value);
-    if (!visitors || isNaN(visitors) || visitors < 1) {
+    if (isNaN(visitors) || visitors < 1) {
       showError("numVisitors", "visitorsError", "Number of visitors must be at least 1."); valid = false;
     } else { showValid("numVisitors"); }
 
@@ -445,6 +462,15 @@ function setupFormValidation() {
     if (valid) {
       form.classList.add("d-none");
       document.getElementById("formSuccess").classList.remove("d-none");
+      form.reset();
+      // Clear all validation classes after reset
+      allInputs.forEach(input => {
+        input.classList.remove("is-invalid", "is-valid");
+      });
+      // Clear all error messages
+      errorElements.forEach(error => {
+        error.textContent = "";
+      });
     }
   });
 }

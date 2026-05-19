@@ -121,6 +121,11 @@ button:focus-visible, a:focus-visible { border-radius: 4px; }
     box-shadow: 0 4px 14px rgba(250,219,128,.45);
 }
 
+.navbar-custom .nav-cta.active {
+    color: var(--primary-shade) !important;
+    background-color: var(--secondary-base) !important;
+}
+
 /* Divider */
 .navbar-custom .nav-divider {
     width: 1px; height: 2rem;
